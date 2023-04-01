@@ -1,13 +1,13 @@
 import {
   Box,
+  Divider,
+  Drawer,
   List,
   ListItem,
-  Drawer,
-  Typography,
+  ListItemIcon,
   ListItemText,
-  Divider,
+  Typography,
 } from '@mui/material'
-import ListItemIcon from '@mui/material/ListItemIcon'
 
 import InboxOutlinedIcon from '@mui/icons-material/InboxOutlined'
 import MailOutlineOutlinedIcon from '@mui/icons-material/MailOutlineOutlined'

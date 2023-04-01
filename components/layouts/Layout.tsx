@@ -5,13 +5,13 @@ import { Navbar, Sidebar } from '../ui'
 
 interface Props {
   title?: string
+  children?: React.ReactNode
 }
 
 export const Layout: FC<Props> = ({ title = 'OpenJira', children }) => {
   return (
     <Box sx={{ flexFlow: 1 }}>
       <Head>{title}</Head>
-
       <Navbar />
       <Sidebar />
 
