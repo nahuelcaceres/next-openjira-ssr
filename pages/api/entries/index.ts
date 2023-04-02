@@ -5,6 +5,7 @@ import { Entry, IEntry } from '../../../models'
 type Data = 
   | {message: string}
   | IEntry[]
+  | IEntry
 
 
 export default function handler(req: NextApiRequest, res: NextApiResponse<Data>) {

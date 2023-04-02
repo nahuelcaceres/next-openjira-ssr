@@ -1,4 +1,4 @@
-import { UIState } from "./"
+import { UIState } from "./UIProvider"
 /*
     es una funcion pura que deberia resolver todo para lo
     que fue creada especificamente. Siempre retornara un NUEVO state
@@ -42,5 +42,4 @@ export const uiReducer = (state:UIState, action:UIActionType): UIState => {
         default:
             return state
     }
-    return state
 }
