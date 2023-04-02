@@ -13,11 +13,14 @@ export interface EntriesState {
   entries: Entry[]
 }
 
+interface Props {
+  children: React.ReactNode
+}
 const Entries_INITIAL_STATE: EntriesState = {
   entries: [],
 }
 
-export const EntriesProvider: FC = ({ children }) => {
+export const EntriesProvider: FC<Props> = ({ children }) => {
   const [state, dispatch] = useReducer(entriesReducer, Entries_INITIAL_STATE)
   const { enqueueSnackbar } = useSnackbar()
 

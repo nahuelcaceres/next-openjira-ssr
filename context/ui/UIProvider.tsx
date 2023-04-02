@@ -7,13 +7,17 @@ export interface UIState {
   isDragging: boolean
 }
 
+interface Props {
+  children: React.ReactNode
+}
+
 const UI_INITIAL_STATE: UIState = {
   sidemenuOpen: false,
   isAddingEntry: false,
   isDragging: false,
 }
 
-export const UIProvider: FC = ({ children }) => {
+export const UIProvider: FC<Props> = ({ children }) => {
   const [state, dispatch] = useReducer(uiReducer, UI_INITIAL_STATE)
 
   const openSideMenu = () => {
