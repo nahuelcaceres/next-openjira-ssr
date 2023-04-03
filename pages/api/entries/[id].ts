@@ -47,7 +47,7 @@ const deleteEntry = async(req: NextApiRequest, res: NextApiResponse) => {
 
       await db.disconnect()
 
-      console.log({error})
+      // console.log({error})
 
       res.status(400).json({message: error })
   }
@@ -79,7 +79,7 @@ const updateEntry = async(req: NextApiRequest, res: NextApiResponse) => {
       
     } catch (error: any) {
       await db.disconnect()
-      console.log({error})
+      // console.log({error})
 
       res.status(400).json({message: error.errors.status.message })
     }

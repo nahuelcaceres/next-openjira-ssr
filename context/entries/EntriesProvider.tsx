@@ -54,7 +54,7 @@ export const EntriesProvider: FC<Props> = ({ children }) => {
         displaySnackbar('Entrada actualizada')
       }
     } catch (error) {
-      console.log({ error })
+      // console.log({ error })
     }
   }
 
